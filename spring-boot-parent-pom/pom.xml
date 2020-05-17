@@ -17,51 +17,19 @@
 	<packaging>pom</packaging>
 
 	<name>parent-pom</name>
-	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.14</maven.compiler.source>
-		<maven.compiler.target>1.14</maven.compiler.target>
-		<io.springfox.springfox.version>2.9.2</io.springfox.springfox.version>
+		<org.springframework.boot.version>2.2.6.RELEASE</org.springframework.boot.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-
-			<!-- Swagger dependencies -->
 			<dependency>
-				<groupId>io.springfox</groupId>
-				<artifactId>springfox-swagger2</artifactId>
-				<version>${io.springfox.springfox.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.springfox</groupId>
-				<artifactId>springfox-swagger-ui</artifactId>
-				<version>${io.springfox.springfox.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>commons-net</groupId>
-				<artifactId>commons-net</artifactId>
-				<version>3.6</version>
-			</dependency>
-			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<version>1.18.12</version>
-			</dependency>
-			<dependency>
-				<groupId>com.googlecode.json-simple</groupId>
-				<artifactId>json-simple</artifactId>
-				<version>1.1</version>
-			</dependency>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.11</version>
-				<scope>test</scope>
+				<groupId>com.galaxy</groupId>
+				<artifactId>parent-pom</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

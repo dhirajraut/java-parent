@@ -16,19 +16,42 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.14</maven.compiler.source>
 		<maven.compiler.target>1.14</maven.compiler.target>
+		<io.springfox.springfox.version>2.9.2</io.springfox.springfox.version>
+		<org.projectlombok.lombok>1.18.12</org.projectlombok.lombok>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Developer dependencies -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${org.projectlombok.lombok}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${io.springfox.springfox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${io.springfox.springfox.version}</version>
+			</dependency>
+
+			<!-- Additional test Dependencies -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- Additional dependencies -->
 			<dependency>
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
 				<version>3.6</version>
-			</dependency>
-			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<version>1.18.12</version>
 			</dependency>
 			<dependency>
 				<groupId>com.googlecode.json-simple</groupId>
@@ -36,14 +59,13 @@
 				<version>1.1</version>
 			</dependency>
 			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.11</version>
-				<scope>test</scope>
+				<groupId>org.modelmapper</groupId>
+				<artifactId>modelmapper</artifactId>
+				<version>2.3.7</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<modules>
 		<module>spring-boot-parent-pom</module>
 	</modules>
