@@ -9,7 +9,6 @@ pipeline {
             steps {
                     bat "echo PATH = %PATH%"
                     bat "echo M2_HOME = %M2_HOME%"
-                '''
             }
         }
 
