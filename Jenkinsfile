@@ -7,19 +7,18 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
-
+                    bat "echo PATH = %PATH%"
+                    bat "echo M2_HOME = %M2_HOME%"
                 '''
             }
         }
 
         stage ('Build') {
             steps {
-                sh 'mvn clean install' 
+                bat "mvn clean install" 
             }
             post {
                 success {
-                    junit 'target/surefire-reports/**/*.xml' 
                 }
             }
         }
