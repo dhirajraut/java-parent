@@ -8,7 +8,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 sh '''
-					set M2_HOME = "C:\Users\draut\00_Dhiraj\Apps\apache-maven-3.5.0-OOTB"
+					set M2_HOME = "C:\\Users\\draut\\00_Dhiraj\\Apps\\apache-maven-3.5.0-OOTB"
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
