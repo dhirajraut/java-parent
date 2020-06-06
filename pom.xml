@@ -76,7 +76,4 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<modules>
-		<module>spring-boot-parent-pom</module>
-	</modules>
 </project>
